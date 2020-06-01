@@ -1,15 +1,7 @@
 package TDD.LeapYear;
 
 public class LeapYear {
-    // Following notes from Class:
-    // public String processNumber(int number) {
-    // if ((number % 4 == 0) && (number % 100 != 0)) {
-    // return "True";
-    // } else {
-    // return Integer.toString(number);
-    // }
-    // }
-    // Restructuring to fit Boolean:
+
     public static boolean IsLeapYear(int year) {
         if (isMultipleOf4(year) && ((notDivisbleBy4(year)) || (isMultipleOf400(year)))) {
             return true;
